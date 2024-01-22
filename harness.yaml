@@ -1,0 +1,25 @@
+featureFlags:
+  flags:
+  - flag:
+      name: fleg
+      identifier: fleg
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: prod
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "off"
+  projectIdentifier: cmproj
+  orgIdentifier: default
