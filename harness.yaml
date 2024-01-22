@@ -57,6 +57,10 @@ featureFlags:
           value: "true"
         - identifier: "false"
           value: "false"
+      tags:
+      - tag:
+          name: test
+          identifier: test
       environments:
       - identifier: prod
         default:
