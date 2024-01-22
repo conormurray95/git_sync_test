@@ -20,7 +20,7 @@ featureFlags:
         default:
           onVariation: "false"
           offVariation: "false"
-        state: "on"
+        state: "off"
   - flag:
       name: fleg2
       identifier: fleg2
@@ -41,10 +41,31 @@ featureFlags:
         default:
           onVariation: "false"
           offVariation: "false"
-        state: "off"
+        state: "on"
   - flag:
       name: fleg3
       identifier: fleg3
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: prod
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "on"
+  - flag:
+      name: notwork
+      identifier: notwork
       description: ""
       permanent: false
       spec:
