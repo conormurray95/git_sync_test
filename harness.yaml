@@ -42,6 +42,10 @@ featureFlags:
           onVariation: "false"
           offVariation: "false"
         state: "on"
+        targetRules:
+        - targets:
+          - identifier: HT_181
+          variation: "true"
   - flag:
       name: fleg3
       identifier: fleg3
