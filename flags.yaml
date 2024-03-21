@@ -1,29 +1,4 @@
 featureFlags:
-  flags:
-  - flag:
-      name: flag4
-      identifier: flag4
-      description: ""
-      permanent: false
-      spec:
-        type: boolean
-        default:
-          onVariation: Enabled
-          offVariation: Disabled
-        variations:
-        - identifier: Enabled
-          value: "false"
-        - identifier: Disabled
-          value: "true"
-      tags:
-      - tag:
-          name: test2
-          identifier: test2
-      environments:
-      - identifier: group
-        default:
-          onVariation: Enabled
-          offVariation: Disabled
-        state: "off"
+  flags: []
   projectIdentifier: cmterra
   orgIdentifier: default
