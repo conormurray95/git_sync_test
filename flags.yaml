@@ -103,6 +103,6 @@ featureFlags:
         default:
           onVariation: Enabled
           offVariation: Disabled
-        state: "off"
+        state: "on"
   projectIdentifier: cmterra
   orgIdentifier: default
