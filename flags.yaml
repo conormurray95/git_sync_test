@@ -20,6 +20,81 @@ featureFlags:
         default:
           onVariation: "false"
           offVariation: "false"
+        state: "off"
+  - flag:
+      name: flag2
+      identifier: flag2
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "false"
+          value: "false"
+        - identifier: "true"
+          value: "true"
+      tags:
+      - tag:
+          name: test2
+          identifier: test2
+      environments:
+      - identifier: group
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "on"
+  - flag:
+      name: flag3
+      identifier: flag3
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "false"
+          value: "false"
+        - identifier: "true"
+          value: "true"
+      tags:
+      - tag:
+          name: test2
+          identifier: test2
+      environments:
+      - identifier: group
+        default:
+          onVariation: "true"
+          offVariation: "true"
+        state: "off"
+  - flag:
+      name: flag4
+      identifier: flag4
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: Enabled
+          offVariation: Disabled
+        variations:
+        - identifier: Enabled
+          value: "false"
+        - identifier: Disabled
+          value: "true"
+      tags:
+      - tag:
+          name: test2
+          identifier: test2
+      environments:
+      - identifier: group
+        default:
+          onVariation: Enabled
+          offVariation: Disabled
         state: "on"
   projectIdentifier: cmterra
   orgIdentifier: default
