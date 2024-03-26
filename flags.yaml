@@ -96,5 +96,26 @@ featureFlags:
           onVariation: Enabled
           offVariation: Disabled
         state: "on"
+  - flag:
+      name: flag5
+      identifier: flag5
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: group
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "off"
   projectIdentifier: cmterra
   orgIdentifier: default
