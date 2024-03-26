@@ -1,0 +1,24 @@
+pipeline:
+  name: test
+  identifier: test
+  projectIdentifier: cmterra
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: flag
+        identifier: flag
+        description: ""
+        type: FeatureFlag
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: FlagConfiguration
+                  name: FlagConfiguration_1
+                  identifier: FlagConfiguration_1
+                  spec:
+                    feature: <+input>
+                    environment: group
+                    instructions: <+input>
+                  timeout: 10m
