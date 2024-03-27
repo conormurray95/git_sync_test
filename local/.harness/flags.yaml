@@ -21,7 +21,7 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
-  - flag2:
+  - flag:
       name: flag2
       identifier: flag2
       description: my desc
