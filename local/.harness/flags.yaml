@@ -21,5 +21,26 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
+  - flag2:
+      name: flag2
+      identifier: flag2
+      description: my desc
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "Enabled"
+          offVariation: "Disabled"
+        variations:
+        - identifier: "Enabled"
+          value: "true"
+        - identifier: "Disabled"
+          value: "false"
+      environments:
+      - identifier: dev
+        default:
+          onVariation: "Enabled"
+          offVariation: "Disabled"
+        state: "off"
   projectIdentifier: lazytestnew
   orgIdentifier: default
