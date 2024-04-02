@@ -1,5 +1,5 @@
 pipeline:
-  name: pipe4
+  name: pipe5
   identifier: pipe
   projectIdentifier: lazytestnew
   orgIdentifier: default
