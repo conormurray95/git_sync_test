@@ -41,6 +41,6 @@ featureFlags:
         default:
           onVariation: Enabled
           offVariation: Disabled
-        state: "on"
+        state: "off"
   projectIdentifier: lazytestnew
   orgIdentifier: default
