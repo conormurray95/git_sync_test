@@ -20,7 +20,7 @@ featureFlags:
         default:
           onVariation: "false"
           offVariation: "false"
-        state: "off"
+        state: "on"
   - flag:
       name: flag2
       identifier: flag2
@@ -41,6 +41,6 @@ featureFlags:
         default:
           onVariation: Enabled
           offVariation: Disabled
-        state: "off"
+        state: "on"
   projectIdentifier: lazytestnew
   orgIdentifier: default
